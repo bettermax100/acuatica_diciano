@@ -41,7 +41,13 @@ h1 {
   background-color: #3387cb;
   padding: 50px 0;
   margin: 25px auto;
-  transition: all .5s ease-in-out; }
+  transition: all .5s ease-in-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .features__card:hover {
     background-color: black;
     transform: translateY(20px);
@@ -120,6 +126,37 @@ h1 {
   color: #121212;
   resize: none;
   background-color: transparent; }
+
+/* Mixin */
+.customList--horizontal {
+  padding-left: 0;
+  margin-left: 1.2rem; }
+  .customList--horizontal li {
+    margin: 10px; }
+  .customList--horizontal li {
+    display: inline-block; }
+
+.features__card {
+  border-radius: 10px; }
+
+/* Map */
+.color--twitter {
+  color: white;
+  font-size: 2rem; }
+  .color--twitter:hover {
+    color: #00acee; }
+
+.color--whatsapp {
+  color: white;
+  font-size: 2rem; }
+  .color--whatsapp:hover {
+    color: #128C7E; }
+
+.color--youtube {
+  color: white;
+  font-size: 2rem; }
+  .color--youtube:hover {
+    color: #c4302b; }
 
 @media (max-width: 768px) {
   #footer div {
